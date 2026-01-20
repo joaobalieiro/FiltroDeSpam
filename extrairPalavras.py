@@ -99,7 +99,7 @@ def ensure_nltk_resources() -> None:
 
 def main() -> int:
     parser = argparse.ArgumentParser(description="Extrai e conta palavras frequentes em um diretório de emails.")
-    parser.add_argument("--emails_dir", type=Path, default=Path("C:\\Users\\fonso\\Downloads\\projetosGitHub\\filtroSpam\\emails"), help="Diretório com os emails.")
+    parser.add_argument("--emails_dir", type=Path, default=Path("emails"), help="Diretório com os emails.")
     parser.add_argument("--out", type=Path, default=Path("listaPalavras.csv"), help="Caminho do CSV de saída.")
     parser.add_argument("--min_count", type=int, default=100, help="Frequência mínima para entrar no CSV.")
     parser.add_argument("--lang", type=str, default="english", help="Idioma das stopwords (ex: english, portuguese).")
