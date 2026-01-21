@@ -1,0 +1,10 @@
+linearsvc  c=0.1
+confusion matrix
+           pred_ham  pred_spam
+true_ham       1006        72
+true_spam        39       435
+precision : 0.96
+recall : 0.93
+time spent for model : 0.12s
+
+time spent for entire code : 0.41s
